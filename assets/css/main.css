@@ -29,6 +29,16 @@ body {
   color: var(--color);
   transition: background-color .3s;
 }
+html {
+  background-color: var(--bg);
+}
 a {
   color: var(--color-primary)
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
 }
