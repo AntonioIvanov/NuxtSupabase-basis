@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full absolute flex items-center justify-between px-4 py-3 z-10">
+  <div class="w-full absolute top-0 left-0 flex items-center justify-between px-4 py-3 z-10">
     <div class="w-full flex items-center space-x-5 relative">
       <NuxtLink v-for="(link, i) in links" :key="i" :to="link.path" target="_blank" no-rel class="group flex items-center">
         <svg class="fill-gray-400 group-hover:fill-primary h-6 w-auto mt-0.5" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="m38.288 10.297 1.414 1.415-14.99 14.99-1.414-1.414z"/><path d="M40 20h-2v-8h-8v-2h10zm-5 18H15c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h11v2H15c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V24h2v11c0 1.7-1.3 3-3 3z"/></svg>
@@ -24,7 +24,6 @@ const toggleDark = () => {
 }
 
 const iconMode = computed(() => colorMode.preference === 'dark' ? 'dark' : 'light')
-
 
 const links = [{name: '@NuxtSupabase', path: 'https://supabase.nuxtjs.org/'}, {name: 'Source', path: 'https://github.com/AntonioIvanov/NuxtSupabase-basis'}]
 </script>

@@ -1,6 +1,8 @@
 <template>
   <div>
     <AppHeader />
-    <NuxtPage />
+    <PageContainer>
+      <slot />
+    </PageContainer>
   </div>
 </template>

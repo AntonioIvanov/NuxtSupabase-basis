@@ -32,8 +32,9 @@ body {
 html {
   background-color: var(--bg);
 }
-a {
-  color: var(--color-primary)
+
+.router-link-exact-active {
+  color: var(--color-primary);
 }
 
 .fade-enter, .fade-leave-to {

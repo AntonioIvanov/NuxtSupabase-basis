@@ -14,5 +14,8 @@ export default defineNuxtConfig({
   ],
   colorMode: {
     classSuffix: ''
+  },
+  tailwindcss: {
+    viewer: false,
   }
 })
